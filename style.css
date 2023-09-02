@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body, input, textarea, select {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+}
+
+body {
+  background: #BFD7E4;
+}
+
+body::before {
+  content: '';
+  background: #293241;
+  width: 100%;
+  height: 46.5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10.7rem;
+}
+
+header h1 {
+  font-family: 'Staatliches', sans-serif;
+  color: #FFF;
+  font-size: 3.6rem;
+}
+
+header p {
+  color: #FFF;
+  font-size: 1.6rem;
+}
+
+header img {
+  margin-top: 2.3rem;
+}
+
+.header-form {
+  width: 75rem;
+  height: 13.3rem;
+  margin-top: 3.2rem;
+  border-radius: 2rem 2rem 0rem 0rem;
+  background: #F67669;
+  color: #FFF;
+  font-family: 'Staatliches', sans-serif;
+  font-size: 2.4rem;
+  line-height: 3.4rem;
+  padding-top: 5rem;
+  padding-left: 27.5rem;
+}
+
+form {
+  max-width: 75rem;
+  background: #FFF;
+  padding: 3.1rem 6.4rem 0;
+  margin: auto;
+}
+
+fieldset {
+  border: none;
+}
+
+label {
+  color: #4E4958;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+}
+
+label span {
+  color: #C1BCCC;
+  font-size: 1.2rem;
+  line-height: 2.0rem;
+  margin-left: 0.8rem;
+}
+
+label span:hover {
+  color: #959398;
+}
+
+.name-flex {
+  display: flex;
+  gap: 22px;
+}
+
+.name-flex input {
+  width: 30rem;
+  height: 5.5rem;
+  padding: 2rem;
+  margin-top: 0.8rem;
+  margin-bottom: 1.5rem;
+  border-radius: 0.8rem;
+  border: 0.1rem solid #E6E6F0;
+  background: #FAFAFC;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper input {
+  width: 100%;
+  height: 5.5rem;
+  padding: 2rem;
+  margin-top: 0.8rem;
+  margin-bottom: 1.5rem;
+  border-radius: 0.8rem;
+  border: 0.1rem solid #E6E6F0;
+  background: #FAFAFC;
+}
+
+legend {
+  color: #253B51;
+  font-family: 'Staatliches', sans-serif;
+  font-size: 2.4rem;
+  line-height: 3.4rem;
+  text-align: center;
+  border-bottom: 1px solid #E6E6F0;
+  margin-bottom: 3.1rem;
+  padding-top: 2rem;
+  padding-bottom: 0.8rem;
+}
+
+.select-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.select-wrapper select {
+  width: 30rem;
+  height: 5.5rem;
+  padding: 1.5rem;
+  margin-top: 0.8rem;
+  margin-bottom: 1.5rem;
+  border-radius: 0.8rem;
+  border: 0.1rem solid #E6E6F0;
+  background: #FAFAFC;
+}
+
+.feed-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.feed-wrapper textarea {
+  width: 100%;
+  height: 16.6rem;
+  padding: 2rem;
+  margin-top: 0.8rem;
+  margin-bottom: 1.5rem;
+  border-radius: 0.8rem;
+  border: 0.1rem solid #E6E6F0;
+  background: #FAFAFC;
+}
+
+.check-wrapper {
+  position: relative;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.check-wrapper label {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+
+.check-wrapper input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2.4rem;
+  height: 2.4rem;
+  opacity: 0;
+}
+
+.check-wrapper label::before {
+  content: '';
+  width: 2.4rem;
+  height: 2.4rem;
+  display: block;
+  border: 0.1rem solid #E6E6F0;
+  border-radius: 0.8rem;
+}
+
+.check-wrapper input:checked + label::before {
+  background-image: url("data:image/svg+xml,%3Csvg width='18' height='14' viewBox='0 0 18 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 11.17L1.83 7L0.410004 8.41L6 14L18 2L16.59 0.589996L6 11.17Z' fill='%2342D3FF'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: right 0.3rem top 0.5rem;
+}
+
+.check-wrapper input:focus + label::before {
+  outline: 0.2rem solid black ;
+}
+
+.next-flex {
+  display: flex;
+  margin-bottom: 2.5rem;
+}
+
+.date-wrapper input {
+  width: 30rem;
+  height: 5.5rem;
+  padding: 2rem;
+  margin-top: 0.8rem;
+  margin-right: 3.2rem;
+  margin-bottom: 1.5rem;
+  border-radius: 0.8rem;
+  border: 0.1rem solid #E6E6F0;
+  background: #FAFAFC;
+}
+
+.hour-wrapper input {
+  width: 14rem;
+  height: 5.5rem;
+  padding: 2rem;
+  margin-top: 0.8rem;
+  margin-right: 0.8rem;
+  margin-bottom: 1.5rem;
+  border-radius: 0.8rem;
+  border: 0.1rem solid #E6E6F0;
+  background: #FAFAFC;
+}
+
+footer {
+  width: 75rem;
+  height: 15rem;
+  background: #FFF;
+  border-radius: 0 0 2rem 2rem;
+  padding: 3.1rem 6.4rem 0;
+  margin: auto;
+  margin-bottom: 39.2rem;
+}
+
+footer button {
+  width: 62.2rem;
+  height: 5.1rem;
+  color: #FFF;
+  font-family: 'Staatliches', sans-serif;
+  font-size: 2rem;
+  line-height: 2.6rem;
+  border-style: none;
+  border-radius: 0.8rem;
+  background: #F67669;
+}
+
+footer button:hover {
+  color: #c5c5c5;
+  background: #d96a5e;
+}
